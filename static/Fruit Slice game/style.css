@@ -1,0 +1,168 @@
+html {
+    height: 100%;
+    background: radial-gradient(circle, #fff, rgb(153, 149, 149));
+    background: -moz-radial-gradient(circle, #fff, rgb(153, 149, 149));
+    background: -webkit-radial-gradient(circle, #fff, rgb(153, 149, 149));
+    background: -o-radial-gradient(circle, #fff, rgb(153, 149, 149));
+}
+
+.container {
+    background-color: aqua;
+    width: 900px;
+    height: 90vh;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px rgb(47, 135, 236);
+    padding: 10px;
+    position: relative;
+}
+
+.score {
+    background: rgb(226, 223, 15);
+    padding: 10px;
+    position: absolute;
+    left: 800px;
+    box-shadow: 0px 3px rgb(73, 73, 2);
+}
+
+.correct {
+    position: absolute;
+    left: 250px;
+    padding: 15px;
+    background: green;
+    color: antiquewhite;
+    display: none;
+    border-radius: 10px;
+    
+}
+.tryagain {
+    position: absolute;
+    left: 200px;
+    padding: 15px;
+    background: rgb(216, 26, 26);
+    color: antiquewhite;
+    border-radius: 10px;
+    display:none;
+}
+.fruitContainer{
+    background-color: rgb(255, 255, 255);
+    width: 750px;
+    height: 420px;
+    margin: 50px auto 10px auto;
+    box-shadow: 0px 3px blueviolet;
+    font-size:100px;
+    text-align: center;
+    line-height: 150px;
+    font-family: cursive, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+#fruit1{
+    position: absolute;
+}
+.instructions{
+    width:400px;
+    height: 40px;
+    margin: 10px auto;
+    background-color: rgb(236, 31, 236);
+    text-align: center;
+    line-height: 40px;
+    color: antiquewhite;
+    box-shadow: 0px 3px rgb(77, 3, 77);
+    letter-spacing: 1px;
+    font-family: cursive, sans-serif;
+}
+
+.box{
+    width: 65px;
+    height: 75px;
+    background-color: antiquewhite;
+    float: left;
+    margin-right: 46px;
+    font-size:25px;
+    text-align: center;
+    line-height: 75px;
+    box-shadow: 0px 3px rgba(0,0,0,0.2);
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+     -o-transition: all 0.2s;
+}
+.box:hover,.startreset:hover{
+    background-color: rgb(193, 155, 230);
+    color: black;
+    box-shadow: 0px 3px rgba(221, 15, 221, 0.8);
+    
+}
+.box:active,.startreset:active{
+    top: 3px;
+    box-shadow: 0px 0px;
+}
+.box:nth-child(4){
+    margin-right: 0px;
+}
+.startreset{
+    cursor: pointer;
+    background-color: antiquewhite;
+    width: 100px;
+    height: 40px;
+    margin: 13px auto;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 3px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+     -o-transition: all 0.2s;
+    letter-spacing: 1px;
+    
+}
+.trialsLeft{
+    padding: 2px;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(238, 238, 226);
+    position: absolute;
+    /* bottom: 53px;
+    left: 360px; */
+    letter-spacing: 1px;
+    text-align: center;
+    /* z-index: 2; */
+    display: none;
+    /* visibility: hidden; */
+}
+.life{
+    background-color: rgb(238, 238, 226);
+    /* width:21px;
+    height:20px; */
+    margin: 3px;
+    padding-top: 7px;
+    /* padding: 5px; */
+}
+.gameover{
+    width: 500px;
+    background: rgb(209,149,27);
+    background: linear-gradient(187deg, rgba(209,149,27,1) 33%, rgba(230,216,153,1) 100%);
+    background: -webkit-linear-gradient(187deg, rgba(209,149,27,1) 33%, rgba(230,216,153,1) 100%);
+    background: -moz-linear-gradient(187deg, rgba(209,149,27,1) 33%, rgba(230,216,153,1) 100%);
+    background: -o-linear-gradient(187deg, rgba(209,149,27,1) 33%, rgba(230,216,153,1) 100%);
+    position: absolute;
+    top: 120px;
+    left: 200px;
+    height: 300px;
+    text-align: center;
+    font-size: 2.5rem;
+    z-index: 2;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: rgb(7, 4, 0);
+    display: none;
+}
+
+.fruit{
+    display: none;
+}

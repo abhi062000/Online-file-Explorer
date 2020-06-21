@@ -1,0 +1,91 @@
+body{
+    text-align: center;
+    background: url('./images/background.png') center center fixed;
+    background-size: cover;
+}
+
+/* title */
+#header{
+    background: linear-gradient(white,rgb(53, 143, 204));
+    background: -webkit-linear-gradient(white,rgb(53, 143, 204));
+    background: -o-linear-gradient(white,rgb(53, 143, 204));
+    background: -moz-linear-gradient(white,rgb(53, 143, 204));    
+    color: #fff;
+    height: 60px;
+    line-height: 60px;
+    font-size: 2rem;
+    width: 50%;
+    margin:0.5rem auto;
+    letter-spacing: 4px;
+}
+
+/* inputs */
+.inputContainer{
+    width: 30%;
+    margin: 0 auto;
+}
+.input{
+    height: 1.5rem;
+    /* to increase slider handle */
+    font-size: 1.3rem;  
+}
+#circle{
+    height: 3px;
+    width: 3px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: black;
+    top: 50%;
+    left: 50%;
+}
+#thicknessInput{
+    margin: 1rem auto;
+    position: relative;
+}
+
+/*canvas container */
+.container{
+    width: 800px;
+    height: 400px;
+    border: 1px solid grey;
+    margin: 10px auto;
+}
+#paint{
+    background-color: #fff;
+    cursor: crosshair;
+}
+
+/* buttons */
+.inputContainer2{
+    margin: 3px auto;
+}
+.input2{
+    display: inline-block;
+    margin: 10px;
+    width: 120px;
+    position: relative;
+}
+.button{
+    border: 1px solid blue;
+    font-size: 1.3rem;
+    padding: 8px;
+    background-color: #fff;
+    color: blue;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow:0px 4px rgba(0, 0, 255,0.5);
+}
+.button:hover{
+    color: #fff;
+    background-color: blue;
+}
+.button:active{
+    position: relative;
+    top: 4px;
+}
+
+.eraseMode{
+    background-color: rgb(97, 9, 238);
+    color: #fff;
+}
+

@@ -1,0 +1,55 @@
+/* BREADCRUMB  */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.breadcrumb {
+    background-color: rgb(4, 4, 34);
+    border-radius: 0;
+}
+
+a,
+a:hover {
+    color: rgb(136, 163, 221);
+}
+
+table {
+    margin: 100px auto;
+}
+
+thead {
+    background-color: rgb(4, 4, 34);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+tbody {
+    height: 400px;
+    overflow-y: scroll;
+    display: block;
+}
+
+thead,
+tbody tr {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+table td a {
+    color: black;
+}
+
+ion-icon {
+    margin: 2px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    background-color: rgb(4, 4, 34);
+    width: 100%;
+}
